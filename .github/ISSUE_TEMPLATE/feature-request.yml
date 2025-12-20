@@ -1,0 +1,73 @@
+name: "Feature Request"
+description: "Suggest a new feature or enhancement for this project."
+title: "Feature Request: {{ feature_name }}"
+labels: ["enhancement"]
+assignees: []
+body:
+  - type: input
+    id: feature_name
+    attributes:
+      label: "🌟 Feature Name"
+      description: "A short name or title for the feature or enhancement."
+    validations:
+      required: true
+
+  - type: textarea
+    id: prerequisite_tasks
+    attributes:
+      label: "⬅️ Prerequisite Tasks"
+      description: "List any issues or tasks that must be completed before this feature can be worked on. (e.g., #1, #2)"
+    validations:
+      required: false
+
+  - type: textarea
+    id: required_files
+    attributes:
+      label: "📂 Required Files"
+      description: "List any files that need to be added or modified for this feature. (e.g., `index.html`, `styles.css`)"
+    validations:
+      required: false
+
+  - type: textarea
+    id: task_list
+    attributes:
+      label: "✅ Task List"
+      description: "Provide a checklist of tasks and subtasks required to implement this feature."
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: "💯 Acceptance Criteria"
+      description: "List the measurable criteria that must be met for this feature to be considered complete."
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: "📝 Notes"
+      description: "Additional context, clarifications, or related discussions for this feature."
+    validations:
+      required: false
+
+  - type: textarea
+    id: references
+    attributes:
+      label: "🔗 References"
+      description: "Provide links to relevant documentation, articles, or resources related to this feature."
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        **📎 Attachments**
+
+        Attach screenshots, mockups, documents, or any other relevant files using the **Attach files** button below the issue form. Please do not paste large binary files directly into the text fields.
+
+        Helpful attachments might include:
+        - UI mockups or design assets
+        - Screenshots showing the current behavior or mockups for the feature
+        - Links to external resources, tutorials, or related articles

@@ -8,21 +8,19 @@ body:
     id: summary
     attributes:
       label: "📝 Summary"
-      description: |
-        One-line imperative summary of the bug. This will be used in the issue title.
+      description: "A brief, one-line summary of the bug. This will be used as the issue title."
     validations:
       required: true
 
   - type: textarea
     id: steps
     attributes:
-      label: "🪜 Steps to reproduce"
+      label: "🪜 Steps to Reproduce"
       description: |
-        Provide numbered, minimal steps that exactly reproduce the issue.
-        Example:
+        Provide numbered steps to reproduce the issue. Example:
         1. Go to `/signup`
         2. Enter `user@`
-        3. Click **Create account**
+        3. Click **Create Account**
         4. Observe the error
     validations:
       required: true
@@ -31,9 +29,7 @@ body:
     id: expected
     attributes:
       label: "✅ Expected Behavior"
-      description: |
-        Describe what you expected to happen when following the steps above.
-        Be concise and specific (what should the user see / what HTTP response code / UI change).
+      description: "Describe the expected behavior when following the steps above. Be specific (e.g., UI change, HTTP response code)."
     validations:
       required: true
 
@@ -41,19 +37,15 @@ body:
     id: actual
     attributes:
       label: "❌ Actual Behavior"
-      description: |
-        Describe what actually happened (include error messages, HTTP status codes, visible failures).
-        Paste exact text of errors when possible.
+      description: "Describe the actual behavior, including error messages, HTTP codes, visible failures. Paste exact errors where possible."
     validations:
       required: true
 
   - type: textarea
     id: stack_trace
     attributes:
-      label: "🔎 Stack Trace"
-      description: |
-        Paste relevant stack traces, logs, or error dumps here.
-        Wrap code blocks in triple backticks (```) for readability.
+      label: "🔎 Stack Trace (if applicable)"
+      description: "Paste any relevant stack traces or error logs here. Wrap in triple backticks for readability."
     validations:
       required: false
 
@@ -62,9 +54,9 @@ body:
       value: |
         **📎 Attachments**
 
-        Attach screenshots, recordings, or other files using the **Attach files** button below the issue form (do not paste large binary blobs into the text fields).
+        Attach screenshots, logs, or any relevant files using the **Attach files** button below the issue form. Please do not paste large binary files directly in the text fields.
 
-        Helpful attachments:
+        Helpful attachments might include:
         - Screenshots showing the UI error
         - Console logs or network traces exported to a file
         - A link to a minimal reproducible repo or CodePen/StackBlitz if available
